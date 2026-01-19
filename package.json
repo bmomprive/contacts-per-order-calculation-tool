@@ -1,0 +1,22 @@
+{
+  "name": "contacts-per-order-calculation-tool",
+  "version": "1.0.0",
+  "description": "This is a small software to calculate a number of consumer service contacts received and compare it to the number of orders placed by consumers.\r More information wil be added as an introduction about the background and goals of the project. This may also include a project roadmap.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmomprive/contacts-per-order-calculation-tool.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bmomprive/contacts-per-order-calculation-tool/issues"
+  },
+  "homepage": "https://github.com/bmomprive/contacts-per-order-calculation-tool#readme",
+  "dependencies": {
+    "jest": "^30.2.0"
+  }
+}

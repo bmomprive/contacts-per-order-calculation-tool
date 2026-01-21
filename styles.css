@@ -1,0 +1,17 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic page styling */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Simple heading style */
+h1 {
+  margin-bottom: 16px;
+}

@@ -60,17 +60,20 @@ As a result of these user stories, we can identify clear requirements.
 
 <details>
 <summary>Project Management</summary>
-<ul>This will explain how I managed the project.
+<ul>I managed this project by using a lightweight Agile approach. I focused on incremental delivery, version control and clear documentation. I organised the project using a Kanban workflow where I created GitHub issues. I then linked pull requests to these GitHub issues to support visibility. I started by linking pull requests to the Kanban board but this duplicated tasks and could cause confusion. This pushed me to evolve my approach as I understood how issues and pull requests serve different purposes in GitHub. These pull requests were unlinked from the Kanban board and new ones weren't linked.
+
+## Agile approach
+The development followed an iterative process. Requirements were defined using user stories to identify requirements. These requirements were then prioritised using the MoSCoW technique to first deliver a working Minimum Viable Product (MVP) then extend functionalities in later iterations if and when time allows. A Test-Driven approach was used during development to support incremental delivery and reduce risks. This was crucial to produce a working application as soon as possible and add small steps over time, while keeping stakeholders in the loop to get their feedback.
 
 ## Prioritisation
-To ensure the application delivers value efficiently, requirements are prioritised using the MoSCoW (Must have, Should have, Could have, Won't have) method which is a commonly used Agile prioritisation framework. This supports incremental delivery and separate requirements between usability and enhancement features.
+I didn't attribute t-shirt sizes to tickets as this would be more useful with a team of developers compared to only one. However, to ensure the application delivers value efficiently, requirements are prioritised using the MoSCoW (Must have, Should have, Could have, Won't have) method which is commonly used as an Agile prioritisation framework. This supports incremental delivery and separates requirements between usability and enhancement features.
 
 ### Must have
 These requirements are essential to meet core user stories and allow stakeholders to interpret service demand without delay.
 - Numeric input fields for number of consumer service contacts and total number of online orders
 - A calculation button triggers results to avoid reloading the page
 - Calculations: Number of contacts ÷ Total orders
-- Display of contact per order result without noticeable delay.
+- Display of contact-per-order result without noticeable delay.
 - Input validation, rejecting zero, negative and non-numerical values.
 
 ### Should have
@@ -87,6 +90,29 @@ These requirements enhance the flexibility and accessibility but are considered 
 ### Won't have
 These requirements were excluded on purpose to limit complexity but could be implemented in future iteration of the application.
 - Automatic retrieval of order data from external systems or files.
+
+## Test-Driven Development
+A test-driven approach was used for core calculation functions in JavaScript. Unit tests were written first for these functions. This is evidenced by pushing failing tests for the calculateContactsPerOrder function before implementing a solution. The User Interface was manually tested revealing browser error messages were displayed instead of my custom ones.
+
+## Iterations
+The project is planned to be managed iteratively using short "sprints". Considering the small scope of this project and that I am a solo developer on the project, ceremonies and meetings weren't conducted. Sprints mainly helped to clearly define release cycle steps. If the project would be expanded and include more than one developer, I believe sprint planning, daily stand-up, backlog refinement, sprint review and retrospective would be useful.
+
+### Iteration 1
+This is a Minimum Viable Product aligned with MoSCoW must have requirements. It includes:
+- A single contacts-per-order calculation.
+- Validation for missing, non-numeric, zero and negative values.
+- Immediate in-page results and clear error messages.
+- Minimal styling for readability.
+
+### Iteration 2
+This includes "Should have" and some "Could have" features. This might not be fully implemented within the assignment timeframe due to time constraints. It includes:
+- Second contacts-per-order calculation
+- Comparison between both contacts-per-order calculations.
+- Better formatting of metrics
+- A reset function for repeated calculations
+
+### Iteration 3
+This wasn't required within the scope of this assignment but might be done in this project's future. This includes the rest of the "Could have" features as well as the "Won't have" features if deemed beneficial. It is mainly focused on retrieving order data to not make the input mandatory.
 
 </ul>
 </details>

@@ -146,6 +146,11 @@ As mentioned earlier, styling was intentionally kept very minimal to focus on us
 </details>
 
 <details>
-<summary>Reflection and next steps</summary>
-<ul>This will be the conclusion, including a reflection and next steps.</ul>
+<summary>Evaluation</summary>
+<ul>
+This project was the first time I used new programming languages like html, CSS and JavaScript. Learning these languages shorten the development lifecycle and limited the project deliverable to only a Minimum Viable Product for now. Test-Driven development was instrumental as it also allowed me to correct my mistakes earlier. In the end, this MVP met core requirements of the project. The initial request to allow the calculation of contacts per order is possible in the application as is and we could argue other iterations are outside of the initial scope, despite being useful enhancements.
+Another challenge I face was understanding how Git and GitHub worked, especially how issues and pull requests work together. This initially resulted in some duplication and time loss but it taught me a valuable skill to version control.
+To conclude, this project taught me the importance of iterative delivery, scope control and testing while engineering software. It also highlighted the value of documentation which helped with design decision paralysis at the beginning of this project. If more time was available, the next iteration of this project would focus on comparing two contacts-per-order calculations with a more visualy pleasing user interface for enhanced clarity without compromising accessibility.
+  
+</ul>
 </details>

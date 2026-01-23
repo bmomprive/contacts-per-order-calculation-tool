@@ -9,11 +9,6 @@ Our contacts-per-order calculation tool will provide a quick solution for execut
 </details>
 
 <details>
-<summary>Project Management</summary>
-<ul>This will explain how I managed the project.</ul>
-</details>
-
-<details>
 <summary>Design</summary>
 <ul>
 
@@ -60,10 +55,17 @@ As a result of these user stories, we can identify clear requirements.
 - Results update without requiring a page refresh.
 - The application supports keyboard and screen-ready accessibility features when possible.
 
-### Prioritisation
+</ul>
+</details>
+
+<details>
+<summary>Project Management</summary>
+<ul>This will explain how I managed the project.
+
+## Prioritisation
 To ensure the application delivers value efficiently, requirements are prioritised using the MoSCoW (Must have, Should have, Could have, Won't have) method which is a commonly used Agile prioritisation framework. This supports incremental delivery and separate requirements between usability and enhancement features.
 
-#### Must have
+### Must have
 These requirements are essential to meet core user stories and allow stakeholders to interpret service demand without delay.
 - Numeric input fields for number of consumer service contacts and total number of online orders
 - A calculation button triggers results to avoid reloading the page
@@ -71,18 +73,18 @@ These requirements are essential to meet core user stories and allow stakeholder
 - Display of contact per order result without noticeable delay.
 - Input validation, rejecting zero, negative and non-numerical values.
 
-#### Should have
+### Should have
 These requirements improve clarity, usability and interpretation of results but are not required in an initial release.
 - Calculation and display of percentage difference between two contacts-per-order measures.
 - Consistent formating of calculated metrics
 - A reset function to allow easier repeated calculation
 
-#### Could have
+### Could have
 These requirements enhance the flexibility and accessibility but are considered lower priority.
 - Full keyboard accessibility for all actions
 - Screen reader support
 
-#### Won't have
+### Won't have
 These requirements were excluded on purpose to limit complexity but could be implemented in future iteration of the application.
 - Automatic retrieval of order data from external systems or files.
 

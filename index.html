@@ -11,14 +11,13 @@
 <body>
   <h1>Contacts Per Order Calculator</h1>
 
-  <form id="calculator">
+  <form id="calculator" novalidate>
     <div>
       <label for="contacts">Number of contacts</label>
       <input
         type="number"
         id="contacts"
         name="contacts"
-        min="1"
         step="1"
         required
       >
@@ -42,6 +41,6 @@
   </form>
 
   <p id="message" aria-live="polite"></p>
-  <p id="resultCpo"></p>
+  <p id="resultCPO"></p>
 </body>
 </html>

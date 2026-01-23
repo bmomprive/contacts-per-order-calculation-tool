@@ -2,7 +2,7 @@
 Smoke test for Jest and app.js
 */
 
-const { multiply, calculateContactsPerOrder } = require('./app');
+const { calculateContactsPerOrder } = require('./app');
 
 
 test('Jest Smoke Test', () => {

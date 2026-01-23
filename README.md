@@ -5,7 +5,30 @@ Our contacts-per-order calculation tool will provide a quick solution for execut
 
 <details>
 <summary>How to use</summary>
-<ul>This will be a user guide.</ul>
+<ul> ## Purpose
+This application allows users to calculate contacts per order by entering the total number of consumer service contacts and the total number of online order for a given time period. The result helps to take consumers demand into account while evaluating consumer service interactions volume.
+
+## How to use the application
+1. Open the application in a web browser. It is available [here](https://bmomprive.github.io/contacts-per-order-calculation-tool/).
+2. Enter the total number of consumer service contacts in the **Contacts** input field.
+3. Enter the total number of online orders in the **Orders** input field.
+4. Click the **Calculate** button.
+5. The calculated contacts-per-order value will be displayed below your inputs.
+
+![Application User Interface](https://github.com/user-attachments/assets/72f82394-10b3-44a9-8f83-d6c859954427)
+
+In the example above, it means there is 0,775 contacts for each order placed on the website. Results are rounded to 4 decimal points to increase readability.
+
+## Error messages
+The application will validate your inputs before displaying any results. Both fields must be filled with numerical values which are strictly greater than 0. If an invalid input is entered, a clear error message will indicate how you can correct your input.
+
+
+![Application error handling if the value "0" is entered](https://github.com/user-attachments/assets/959a8675-226b-492b-9cbb-2ec634c475b8)
+
+## Limitations
+The current version only supports a single contacts-per-order calculation. Comparing contacts per order and automatically fill order data will be available in the future.
+
+</ul>
 </details>
 
 <details>

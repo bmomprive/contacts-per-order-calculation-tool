@@ -91,9 +91,6 @@ These requirements enhance the flexibility and accessibility but are considered 
 These requirements were excluded on purpose to limit complexity but could be implemented in future iteration of the application.
 - Automatic retrieval of order data from external systems or files.
 
-## Test-Driven Development
-A test-driven approach was used for core calculation functions in JavaScript. Unit tests were written first for these functions. This is evidenced by pushing failing tests for the calculateContactsPerOrder function before implementing a solution. The User Interface was manually tested revealing browser error messages were displayed instead of my custom ones.
-
 ## Iterations
 The project is planned to be managed iteratively using short "sprints". Considering the small scope of this project and that I am a solo developer on the project, ceremonies and meetings weren't conducted. Sprints mainly helped to clearly define release cycle steps. If the project would be expanded and include more than one developer, I believe sprint planning, daily stand-up, backlog refinement, sprint review and retrospective would be useful.
 
@@ -113,13 +110,39 @@ This includes "Should have" and some "Could have" features. This might not be fu
 
 ### Iteration 3
 This wasn't required within the scope of this assignment but might be done in this project's future. This includes the rest of the "Could have" features as well as the "Won't have" features if deemed beneficial. It is mainly focused on retrieving order data to not make the input mandatory.
-
 </ul>
 </details>
 
 <details>
 <summary>Development</summary>
-<ul>This will explain the coding part of the project.</ul>
+<ul>This project is a simple web-based calculation tool allowing users to input a number of consumer service contacts and a number of online orders to calculate the number of contacts per order. The focus was to deliver a Minimum Viable Product (MVP) with clear development, validation as well as enabling a quick feedback loop. Planned enhancements such as comparative calculations and percentage changes are documented in the earlier sections but intentionally scoped to later iterations.
+
+## Technology stack
+The project is implemented using:
+- HTML. Used to create the user interface.
+- CSS. Used to provide readability styling. It was kept to the minimum to support the MVP delivery.
+- JavaScript. Used for calculation logic, validation and Document Object Model (DOM) interaction. 
+- Jest. Used for testing.
+- GitHub. Used for control versions as well as track issues, pull requests. It was also used to protect the main branch by not allowing direct commits to main.
+
+## Architecture
+To improve testing and maintenance, I separated logic from the user interface. _calculateContactsPerOrder_ is a pure function that validates inputs for number of orders and contacts, then returns the contacts-per-order metric. This allows the logic to be tested independently from the browser environment.
+The user interface code in HTML and CSS is responsible for reading input values from JavaScript DOM, uses the calculation function then displays the result or an error message.
+
+## Error handling
+The implementation of input validation is primordial to ensure the calculation function is consistent across the whole application. It checks for missing/empty and non-numerical values which are rejected. Zero and negative values are also rejected as they are not representative of a business case or completely impossible. For example, it never happened that the consumer service didn't receive any contact so the measure would be useless.
+When the user input numbers falling in one of these scenarios, the function returns a clear error message for the user to know how to fix their input without reloading the page as highlighted in requirements.
+
+## Test-Driven Development
+A test-driven approach was used for core calculation functions in JavaScript. Unit tests were written first for these functions. This is evidenced by pushing failing tests for the calculateContactsPerOrder function before implementing a solution. The User Interface was manually tested revealing browser error messages were displayed instead of my custom ones.
+
+## Browser and testing compatibility
+The app.js file is used for two different purposes. The first one is to handle normal browser behaviour like handling inputs and display results/errors. The second is to handle unit testing in Jest. Test-Driven Development highlighted these two use cases are not compatible by default. This is why I implemented environment checks so the module export only works in testing while DOM-related code is only used in the browser. Browser default form validation was also disabled so validation could be customisable.
+
+## Styling
+As mentioned earlier, styling was intentionally kept very minimal to focus on usability rather than visual design. Basic layout constraints, spacing and input fields were styled using CSS to improve readability and user experience while keeping the implementation aligned with the scope of the MVP.
+
+</ul>
 </details>
 
 <details>

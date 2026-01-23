@@ -78,6 +78,31 @@ As a result of these user stories, we can identify clear requirements.
 - Results update without requiring a page refresh.
 - The application supports keyboard and screen-ready accessibility features when possible.
 
+### Prototyping
+To start designing the application, I used FIGMA to create wireframes. These low fidelity representations of the app allows for experimentation without losing time. In our case, it allowed us to show multiple application layouts to stakeholders. For each wireframe, we keep minimum functionalities and only created a path without errors. Error handling will be added later in the project lifecycle.
+  
+## Wireframe 1
+The first wireframe was clearly showing where to input numbers of contacts and orders. Spaces on the left and right helped to identify two sets of inputs for future comparaisons.
+
+### Wireframe 1 - Inputs
+
+![Prototype1-inputs](https://github.com/user-attachments/assets/fb8f5276-69e4-49ea-8b61-3ed8c9452a40)
+
+### Wireframe 1 - Outputs
+
+![Prototype1-results](https://github.com/user-attachments/assets/cc3b272a-e00e-4520-8c1f-ce0fe4c5f796)
+
+## Wireframe 2
+While still wanting to give the same functionalities as the first design, the second one was created in an effort to make the app more compact. However, this was deemed too narrow and crowded by stakeholders and it could have led to users' confusion.
+
+### Wireframe 2 - Inputs
+
+![Prototype2-inputs](https://github.com/user-attachments/assets/2a75216c-5c7c-40ec-9301-4a1b1ceab0e6)
+
+### Wireframe 2 - Outputs
+
+![Prototype2-results](https://github.com/user-attachments/assets/1e58cfec-c95d-4b33-9fe2-fce70c1e014d)
+
 </ul>
 </details>
 
